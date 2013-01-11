@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Zahlenfolgen und Grenzwerte                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zahlenfolgen\formelbuchorange{18,469}}
+\subsection{Einf"uhrung\formelbuchorange{18}}
+
+\begin{minipage}[c]{5cm}
+	arithmetische Folge: \\
+	$a_1=c$ und $a_{n+1}=a_n+d$ \\
+	\\
+	geometrische Folge:\\
+	$a_1=c$ und $a_{n+1}=q*a_n$\\
+\end{minipage}
+\begin{minipage}[c]{2.5cm}
+	$ $\\
+	$\underbrace{d=a_{n+1}-a_n}_{Differenz}$\\
+	$ $\\
+	$\underbrace{q=\frac{a_{n+1}}{a_n}}_{Quotient}$
+\end{minipage}
+\begin{minipage}[c]{10cm}	
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Monotonie} \\
+		\hline
+		$d \geq 0$ & $q \geq 1$ & monoton wachsend & $\uparrow$\\
+		\hline
+		$d > 0$ & $q > 1$ & streng monoton wachsend & $\Uparrow$\\
+		\hline
+		$d \leq 0$  & $0 < q \leq 1$ & monoton fallend & $\downarrow$\\
+		\hline
+		$d < 0$ & $0 < q < 1$ & streng monoton fallend & $\Downarrow$\\
+		\hline
+	\end{tabular}
+\end{minipage}
+	\\
+	konstante Folge:\\
+	$a_1=c$ und $a_{n+1}=c$
+
+\subsection{Beschr"anktheit\formelbuchorange{51,469}}
+	$\text{Beschr"ankt wenn }k\leq a_n\leq\text{ K,	wobei k bzw. K die untere bzw. obere Schranke
+	ist}$
+\subsubsection{Bolzano-Weierstrass}
+	Jede beschr"ankte und monotone Zahlenfolge ist konvergent.
+
+\subsection{Grenzwerts"atze\formelbuchorange{470}}
+
+\subsection{Grenzwerte von rekursiven Folgen}
+
+\begin{flushleft}
+\begin{enumerate}
+	\item Hypothetischer Grenzwert ausrechnen \\[5pt]
+		\begin{minipage}[t]{4.5cm}
+			$  \lim\limits_{n\rightarrow\infty} a_n = \lim\limits_{n\rightarrow\infty} a_{n+1} = a $
+			\end{minipage}
+			\begin{minipage}[t]{12cm}
+			$\text{z.B.}\sqrt{a_n}+1=a_{n+1}\Rightarrow\lim\limits_{n\rightarrow\infty}\;\sqrt{a}+1 = a$\\
+			$\Rightarrow x=\frac{3\pm\sqrt{5}}{2}\Rightarrow$ M"oglicher Grenzwert $\rightarrow$ wenn Folge beschr"ankt und monoton 
+			\end{minipage}\\[5pt]	
+
+	\item Beschr"anktheit mittels des hypothetischen Grenzwertes\\
+$\Rightarrow$ mit vollst"andider Induktion beweisen (Auch mit Ungleichungen l"osbar)\\
+			\begin{minipage}[t]{20cm}
+				\begin{minipage}[t]{1cm}
+					z.B.
+				\end{minipage}
+				\begin{minipage}[t]{5cm}
+					Induktionsanfang $A(1)$:\\
+					Induktionsschritt $A(n+1)$:\\
+				\end{minipage}
+				\begin{minipage}[t]{15cm}
+					$a_1 < \frac{3+\sqrt{5}}{2} < 3 \Rightarrow 1 < 3 $\\
+					$a_n < 3$ \hspace{5cm}$|\sqrt{...}\quad |+1$\\
+					$\underbrace{\sqrt{a_n}+1}_{a_{n+1}} < \sqrt{3}+1 < 3$\\
+				\end{minipage}   
+			\end{minipage}  
+
+
+
+	\item Monotonie annehmen (ev. erste Glieder berechnen)\\
+		$\Rightarrow$ mit vollst"andiger Induktion beweisen (Auch mit q/d-Kriterium oder Ungleichungen l"osbar)\\
+			\begin{minipage}[t]{20cm}
+				\begin{minipage}[t]{1cm}
+					z.B.
+				\end{minipage}
+				\begin{minipage}[t]{5cm}
+					Induktionsanfang $A(1)$:\\
+					Induktionsschritt $A(n+1)$:\\
+				\end{minipage}
+				\begin{minipage}[t]{15cm}
+					$a_1 < a_2 \Rightarrow 1 < 2 $\\
+					$a_n < a_{n+1}$ \hspace{5cm}$|\sqrt{...}\quad |+1$\\
+					$\underbrace{\sqrt{a_n}+1}_{a_{n+1}} < \underbrace{\sqrt{a_{n+1}}+1}_{a_{n+2}}$\\
+				\end{minipage}   
+
+			\end{minipage}  
+            \item Grenzwert bestimmen\\
+		$\Rightarrow$ Aus 2. und 3. folgt das $x=\frac{3+\sqrt{5}}{2}\rightarrow$ Da Folge nach oben beschr"ankt und streng monoton wachsend
+\end{enumerate}
+					
+
+
+
+\subsection{$\varepsilon - n_0$ - Kriterium\formelbuchorange{470}}
+	$|a_n - a| < \varepsilon$ f"ur alle $n \geq n_0(\varepsilon)$
+
+\end{flushleft}
