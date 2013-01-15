@@ -14,4 +14,11 @@
 	<natures>
 		<nature>net.sourceforge.texlipse.builder.TexlipseNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Analysis1E.pdf</name>
+			<type>1</type>
+			<location>D:/Dropbox/HSR/Eclipse/An1E/Analysis1E.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
